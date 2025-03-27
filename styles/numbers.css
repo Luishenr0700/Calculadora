@@ -32,9 +32,9 @@
 #CE{
   color: #975DFA;
 }
-#number-actions-items span.operations{
+#number-actions-items li.operations{
   background-color: #462878;
 }
-#number-actions-items span#result-icon{
+#number-actions-items li#result-icon{
   background: linear-gradient(180deg, #7F45E2 41%, #5F4096 100%);
 }
