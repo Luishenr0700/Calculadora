@@ -1,20 +1,15 @@
-const numbers = document.querySelectorAll("ul#number-actions-items .number")
-const numberDisplay = document.querySelector("ul.display-number")
-const element_numberDisplay = document.querySelector("ul.display-number li")
+const buttons = document.querySelectorAll("ul#number-actions-items button");
+const numberDisplay = document.querySelector("ul.display-number");
+const element_numberDisplay = document.querySelector("ul.display-number li");
 
-numbers.forEach((number) => {
-  number.addEventListener("click", () => {
-    const initNumber = number.innerHTML
-    if (element_numberDisplay.className == "init") {
-      element_numberDisplay.innerHTML = initNumber
+buttons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const initButton = btn.innerHTML;
+    if (+initButton >= 0 || initButton === ".") {
+      console.log(initButton);
+    } else {
+      console.log(`Op: ${initButton}`);
+      
     }
-    else {
-      const newNumber = document.createElement('li')
-      newNumber.textContent = initNumber
-      numberDisplay.appendChild(newNumber)
-    }
-    element_numberDisplay.classList.remove("init")
-  })
-  
+  });
 });
-   

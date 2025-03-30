@@ -17,3 +17,9 @@ body {
 ul, ol{
   list-style: none;
 }
+button{
+  border: none;
+  background: none;
+  font-size: inherit;
+  color: inherit;
+}
