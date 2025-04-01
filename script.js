@@ -6,7 +6,9 @@ buttons.forEach((btn) => {
   btn.addEventListener("click", () => {
     const initButton = btn.innerHTML;
     if (+initButton >= 0 || initButton === ".") {
-      console.log(initButton);
+      if (element_numberDisplay.innerHTML.length < 8) {
+        element_numberDisplay.innerHTML += initButton
+      }
     } else {
       console.log(`Op: ${initButton}`);
       
